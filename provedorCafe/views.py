@@ -3,7 +3,7 @@ from django.shortcuts import render
 from . import services
 
 def index(request):
-    return None
+    return render(request,'index.html')
 def cardapio(request):
     # Busca os dados da API externa
     cafes_brutos = services.buscar_cafes_da_api()
