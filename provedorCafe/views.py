@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.shortcuts import render
 from . import services
 
-def index(request):
-    return render(request,'index.html')
 def cardapio(request):
     # Busca os dados da API externa
     cafes_brutos = services.buscar_cafes_da_api()
@@ -31,3 +29,9 @@ def cardapio(request):
     }
     
     return render(request, 'cardapio.html', context)
+
+def fallback_view(request,exception):
+    contexto={
+        "path":request.path
+    }
+    return render(request,"erro.html",contexto)

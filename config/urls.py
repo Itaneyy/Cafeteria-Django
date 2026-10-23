@@ -21,3 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('provedorCafe.urls')),
 ]
+handler404 = 'provedorCafe.views.fallback_view'

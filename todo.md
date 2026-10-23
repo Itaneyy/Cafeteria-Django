@@ -1,0 +1,4 @@
+-Adicionar fitro por ingrediente e foto do café
+-Adicionar aba para ver itens que estão no carrinho
+-filtrar por quentes e frios
+- Aba onde você pode ver o café com mais detalhes
